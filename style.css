@@ -1,0 +1,33 @@
+.modra_1 {
+    background-color: #00004d;
+    }
+#content {
+    padding: 20px;
+    width: calc(100% - 320px);
+    left: 280px;
+    position: absolute;
+    background-color: #ffffff;
+}
+.barva_ext {/*tĹ™Ă­da*/
+    width: 85px;
+    padding: 5px;
+    height: 20px;
+    transition: width 2s;
+    -webkit-transition: width 2s;
+    color: blue;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.barva_ext:hover {
+    width: 700px;
+}
+span.popis {
+    display:none;
+    position: absolute;
+    padding-left:20px;
+}
+.barva_ext:hover  span.popis {
+    display: inline;
+}/* CSS Document */
+.barva_ext:hover span.kod {
+    opacity:0.5;
