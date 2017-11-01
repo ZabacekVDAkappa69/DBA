@@ -1,4 +1,5 @@
 <?php
+//* Horáček Martin ©2017 
        $hod=rand(1, 6);
        switch($hod){
        case 1:
