@@ -35,6 +35,7 @@ if(!isset($_POST['submit'])){
             <label for="email">E-Mail: </label><input type="email" name="email" id="email" required>
             <br>
             <input type="checkbox" name="muz" value="Muž">Muž
+            <br>
             Zdravotní pojišťovna:
             <select name="pojistovna" required>
                 <option value="VZP" selected>VZP</option>
