@@ -4,7 +4,8 @@
  * User: Mates
  * Date: 09.11.2017
  * Time: 13:35
- */
+ */ 
+ 
 if(!isset($_POST['submit'])){
     ?>
 <!DOCTYPE html>
@@ -86,10 +87,15 @@ else
     echo "<br>";
     echo "Požadujete";
     echo "<br>";
+    if(isset($_POST['pozadavky1'])){
     echo $_POST['pozadavky1'];
     echo "<br>";
+    }
+    if(isset($_POST['pozadavky2'])){
     echo $_POST['pozadavky2'];
     echo "<br>";
+    }
+    if(isset($_POST['pozadavky3'])){
     echo $_POST['pozadavky3'];
-    
+                                    }
 }
