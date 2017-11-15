@@ -47,9 +47,9 @@ if(!isset($_POST['submit'])){
             <input type="radio" name="ucast" value="2">profesionál za oddíl<input type="text" name="oddil">
             <br>
             Požadavky:
-            <input type="checkbox" name="pozadavky" value="1">Vlastní šatna
-            <input type="checkbox" name="pozadavky" value="2">Vegetariánská strava
-            <input type="checkbox" name="pozadavky" value="3">Osobní asistent
+            <input type="checkbox" name="pozadavky1" value="Vlastní šatna">Vlastní šatna
+            <input type="checkbox" name="pozadavky2" value="Vegetariánská strava">Vegetariánská strava
+            <input type="checkbox" name="pozadavky3" value="Osobní asistent">Osobní asistent
             <br>
             <br>
             Souhlasím s podmínkami registrace <input type="checkbox" name="podminky" required>
@@ -86,6 +86,10 @@ else
     echo "<br>";
     echo "Požadujete";
     echo "<br>";
-    echo $_POST['pozadavky'];
+    echo $_POST['pozadavky1'];
+    echo "<br>";
+    echo $_POST['pozadavky2'];
+    echo "<br>";
+    echo $_POST['pozadavky3'];
     
 }
