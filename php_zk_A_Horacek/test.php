@@ -8,21 +8,23 @@ if(!isset($_POST['submit'])){
 <meta charset="UTF-8">
 </head>
 <body>
+<h1>Žádost o studijní pobyt - vstupní formulář </h1>
 <form method="POST">
        <fieldset>
        <legend>Údaje o žadateli</legend>
-                  Jméno: <input type="text" name="first" required>
+                  Jméno: <input type="text" name="first"  required>
                   <br>
                   Přijmení: <input type="text" name="last" required>
                   <br>
                   E-Mail: <input type="email" name="mail" placeholder="Vyplntě emailovou adresu" required>
                   <br>
-                  Státní příslušnost: <input type="text" name="prislusnost" required>
+                  Státní příslušnost: <input type="text" name="prislusnost" value="ČR" required>
        </fieldset>
+       <br><br>
        Pohlaví:
        <br>
-       muž <input type="radio" name="gender" value="muž" required> žena <input type="radio" name="gender" value="žena" required>
-       <br>
+       muž <input type="radio" name="gender" value="muž" required checked> žena <input type="radio" name="gender" value="žena" required>
+       <br>      <br>
        Úroveň znalosti anglického jazyka:
        <select name="anglictina" required>
                 <option value="začátečník">Začátečník</option>
@@ -31,11 +33,11 @@ if(!isset($_POST['submit'])){
                 <option value="pokročilý">Pokročilý</option>
                 <option value="jazykově způsobilý">Jazykově způsobilý</option>
        </select>
-       <br>
+       <br>   <br>
        Znalost dalších cizích jazyků: 
        <br>
-       ruský <input type="checkbox" name="rusky"> německý <input type="checkbox" name="nemecky"> francouzský <input type="checkbox" name="francouzsky"> španělský <input type="checkbox" name="spanelsky">
-       <br>
+       ruský <input type="checkbox" name="rusky" checked> německý <input type="checkbox" name="nemecky"> francouzský <input type="checkbox" name="francouzsky"> španělský <input type="checkbox" name="spanelsky">
+       <br>  <br>
        Zájmy:
        <br>
        <textarea name="zajmy" required>
